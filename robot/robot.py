@@ -49,6 +49,7 @@ class MyRobot(magicbot.MagicRobot):
 
     def disabledInit(self):
         """Do once right away when robot is disabled."""
+        pass
 
     def teleopInit(self):
         """Do when teleoperated mode is started."""
