@@ -110,8 +110,6 @@ class Drive:
 
     def execute(self):
         """Actually makes the robot drive"""
-        backwards = -1 if self.isTheRobotBackwards else 1
-
         if(self.isTheRobotBackwards):
             self.robot_drive.arcadeDrive(-self.y, -self.rotation / 2, self.squaredInputs)
         else:
