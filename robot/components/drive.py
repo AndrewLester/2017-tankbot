@@ -115,7 +115,7 @@ class Drive:
         if(self.isTheRobotBackwards):
             self.robot_drive.arcadeDrive(-self.y, -self.rotation / 2, self.squaredInputs)
         else:
-            self.robot_drive.arcadeDrive(backwards * self.y, -self.rotation * self.halfRotation, self.squaredInputs)
+            self.robot_drive.arcadeDrive(self.y, -self.rotation * self.halfRotation, self.squaredInputs)
 
 
         # by default, the robot shouldn't move
